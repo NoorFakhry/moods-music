@@ -22,9 +22,7 @@
  app.use(cors()).use(cookieParser());
  
  const clientId = process.env.CLIENT_ID;
- console.log(clientId)
  const clientSecret = process.env.CLIENT_SECRET;
- console.log(clientSecret)
  const redirectUri = `http://localhost:${port}/getTokens`;
  const clientAppUri = 'http://localhost:8888/homePage';
  let refreshToken;
